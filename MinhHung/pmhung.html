@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phan Minh Hưng - Portfolio</title>
+
+  <!-- Font Roboto từ Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet" />
+
+  <!-- CSS chính của trang -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome cho icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- PHẦN HEADER: Thanh điều hướng -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar__links">
+          <!-- Các nút điều hướng với button có khung viền -->
+          <li><a href="#about"><button class="navbar__btn">Bản thân</button></a></li>
+          <li><a href="#skills"><button class="navbar__btn">Kỹ năng</button></a></li>
+          <li><a href="#plans"><button class="navbar__btn">Dự định</button></a></li>
+          <li><a href="#contact"><button class="navbar__btn">Liên hệ</button></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PHẦN BANNER: Giới thiệu ngắn gọn -->
+  <section id="banner">
+    <div class="container banner-content">
+      <img src="img/chandung.jpg" alt="Ảnh đại diện" class="avatar" />
+      <div class="intro">
+        <h1>Xin chào, tôi Phan Minh Hưng</h1>
+        <p>
+          Là sinh viên ngành Mạng máy tính và Truyền thông dữ liệu – nơi kết nối thế giới bằng công nghệ, tôi đam mê tìm hiểu cách dữ liệu được kết nối và bảo mật. Tôi tin rằng mạng lưới vững chắc là nền tảng của mọi hệ thống thông minh.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHẦN GIỚI THIỆU -->
+  <section id="about">
+    <div class="container">
+      <h2>Giới thiệu</h2>
+
+      <!-- Thông tin cá nhân -->
+      <div class="info-item">
+        <img src="img/thongtin.jpg" alt="Thông tin cá nhân" />
+        <div>
+          <h3>Thông tin cá nhân</h3>
+          <p>Họ tên: Phan Minh Hưng</p>
+          <p>Ngày sinh: 09/04/2005</p>
+          <p>Địa chỉ: 46 Trần Văn Ơn, Q.Tân Phú, Tp.HCM</p>
+        </div>
+      </div>
+
+      <!-- Học vấn -->
+      <div class="info-item">
+        <img src="img/hocvan.jpg" alt="Học vấn" />
+        <div>
+          <h3>Học vấn</h3>
+          <p>Trường: Đại học Giao Thông Vận Tải TP.HCM</p>
+          <p>Ngành: Mạng máy tính và Truyền thông dữ liệu</p>
+          <p>Năm học: 2023 - Sinh viên năm 2</p>
+        </div>
+      </div>
+
+      <!-- Sở thích -->
+      <div class="info-item">
+        <img src="img/sothich.jpg" alt="Sở thích" />
+        <div>
+          <h3>Sở thích</h3>
+          <ul>
+            <li>Đi du lịch</li>
+            <li>Xem phim</li>
+            <li>Bơi</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHẦN KỸ NĂNG -->
+  <section id="skills">
+    <div class="container">
+      <h2>Kỹ năng</h2>
+      <div class="skills-grid">
+        <!-- Mỗi kỹ năng có hình ảnh + tên -->
+        <div class="skill-box">
+          <img src="img/C++.jpg" alt="C++" />
+          <p>C++</p>
+        </div>
+        <div class="skill-box">
+          <img src="img/Java.jpg" alt="Java" />
+          <p>Java</p>
+        </div>
+        <div class="skill-box">
+          <img src="img/Web.jpg" alt="Web" />
+          <p>Web</p>
+        </div>
+      </div>
+      <!-- Kỹ năng bổ sung -->
+      <p class="extra-skill">Ngôn ngữ: Tiếng Anh</p>
+      <p class="extra-skill">Giải thưởng: Chưa có</p>
+    </div>
+  </section>
+
+  <!-- PHẦN DỰ ĐỊNH -->
+  <section id="plans">
+    <div class="container">
+      <h2>Dự định</h2>
+      <div class="plans-grid">
+        <img src="img/dulich.jpg" alt="Kế hoạch 1" />
+        <img src="img/thethao.jpg" alt="Kế hoạch 2" />
+        <img src="img/ielts.jpg" alt="Kế hoạch 3" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PHẦN LIÊN HỆ -->
+  <footer id="contact">
+    <div class="container">
+      <h2>Liên hệ</h2>
+      <div class="contact-info">
+        <p><i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/hung.phan.184212" target="_blank">Hưng Phan</a></p>
+        <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/ph_mhung/?hl=vi" target="_blank">Minh Hung</a></p>
+        <p><i class="fa-solid fa-phone"></i> (+84) 827052069</p>
+        <p><i class="fa-solid fa-envelope"></i> hungpm0296@ut.edu.vn</p>
+        <p><i class="fa-solid fa-location-dot"></i> 46 Trần Văn Ơn, Q.Tân Phú, Tp.HCM</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- File JavaScript để xử lý hiệu ứng như cuộn mượt, nút lên đầu trang -->
+  <script src="main.js"></script>
+</body>
+</html>
+

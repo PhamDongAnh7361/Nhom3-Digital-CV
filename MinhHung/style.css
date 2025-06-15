@@ -1,0 +1,257 @@
+:root {
+  --blue: #00bcd4;
+  --bg-dark: #0f172a;
+  --text-light: #e2e8f0;
+  --accent: #38bdf8;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  scroll-behavior: smooth;
+}
+
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  background: #0a192f;
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+  padding: 0.0rem 0;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar__links a {
+  color: var(--text-light);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar__links a:hover {
+  color: var(--blue);
+}
+
+#banner {
+  padding: 3rem 0;
+  text-align: center;
+}
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem; /* Tạo khoảng cách giữa ảnh và chữ */
+  justify-content: center; /* Giữ mọi thứ cân giữa */
+  flex-wrap: wrap; /* Đảm bảo responsive */
+}
+
+.intro {
+  margin-left: 10px; /* Đẩy chữ sang phải một chút nếu cần thêm */
+  text-align: left;
+  max-width: 600px;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 12px;
+  border: 3px solid var(--blue);
+  box-shadow: 0 0 15px var(--accent);
+  margin-bottom: 1rem;
+}
+
+.intro h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  color: var(--blue);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: rgba(125, 211, 252, 0.3)
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 4rem; /* khoảng cách giữa ảnh và chữ */
+  margin-bottom: 3rem;
+  justify-content: center;
+  flex-wrap: wrap; /* đảm bảo hiển thị tốt trên mobile */
+  text-align: left;
+}
+
+.info-item img {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--accent);
+  flex-shrink: 0; /* giữ ảnh không co lại quá nhỏ */
+}
+
+.info-item div {
+  flex: 1;
+  max-width: 600px;
+}
+
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skill-box {
+  text-align: center;
+  width: 180px;
+}
+
+.skill-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 8px var(--blue);
+  margin-bottom: 0.5rem;
+}
+
+.extra-skill {
+  text-align: center;
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.plans-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.plans-grid img {
+  width: 300px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.plans-grid img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+ background: #0a192f;
+   text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+  padding: 0rem 0;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info i {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .info-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .plans-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.navbar__btn {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: var(--text-light);
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar__btn:hover {
+  background-color: var(--blue);
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* 1. Hiệu ứng cuộn hiện dần cho từng section */
+section, footer {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 2. Hiệu ứng hover ảnh kỹ năng */
+.skill-box img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--accent);
+}
+
+/* 3. Nút cuộn lên đầu có hiệu ứng rung nhẹ */
+#scrollToTop {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+/* 4. Hiệu ứng hover cho nút menu mềm mượt hơn */
+.navbar__btn:hover {
+  background: linear-gradient(to right, var(--blue), var(--accent));
+  color: #000;
+  box-shadow: 0 0 10px var(--blue);
+  transform: scale(1.05);
+}
+
+
+

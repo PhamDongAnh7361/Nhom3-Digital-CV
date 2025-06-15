@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet" />
+  <!-- main css -->
+  <link rel="stylesheet" href="PhamDongAnh.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>PhamDongAnh</title>
+</head>
+
+<body>
+  <!-- overlay cho menu mobile -->
+  <div id="overlay"></div>
+
+  <!-- HEADER - Thanh điều hướng đầu trang -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <!-- DANH SÁCH LIÊN KẾT MENU -->
+        <ul class="navbar__links">
+          <li><a href="#things"><button class="navbar__btn">Bản thân</button></a></li>
+          <li><a href="#skills"><button class="navbar__btn">Kỹ năng</button></a></li>
+          <li><a href="#plans"><button class="navbar__btn">Dự định</button></a></li>
+          <li><a href="#footer"><button class="navbar__btn">Liên hệ</button></a></li>
+        </ul>
+
+        <!-- NÚT MỞ MENU CHO MOBILE -->
+        <div class="navbar__icons">
+          <div class="navbar__icon"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- banner -->
+  <!-- Banner - Giới thiệu bản thân -->
+  <section id="banner">
+    <div class="container">
+      <div class="banner__img">
+        <img src="./img-PhamDongAnh/PhamDongAnh.png" alt="Ảnh chân dung Phạm Đông Anh" />
+      </div>
+      <div class="banner__heading">
+        <h1>Hello, I'm Đông Anh</h1>
+        <p>
+          Là một “tay mơ” ngành Công nghệ Thông tin, tôi chưa có nhiều kinh nghiệm – nhưng bù lại, tôi có thừa sự nhiệt
+          huyết, khả năng học nhanh và... uống cà phê rất giỏi để debug xuyên đêm!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- things -->
+  <!-- Giới thiệu - Thông tin cá nhân, học vấn, sở thích -->
+  <section id="things">
+    <div class="container">
+      <div class="things__dec">
+        <img src="./img-PhamDongAnh/BongBong2.png" />
+      </div>
+      <div class="things__dec">
+        <img src="./img-PhamDongAnh/BongBong1.png" />
+      </div>
+      <h2>Giới thiệu</h2>
+
+      <div class="things__item">
+        <img src="./img-PhamDongAnh/ThongTinCaNhan.jpg" alt="Thông tin cá nhân" />
+        <div class="things__item--heading">
+          <h3>Thông Tin</h3>
+          <p>
+            TÊN: Phạm Đông Anh <br />
+            NGÀY SINH: 19/11/2005 <br />
+            ĐỊA CHỈ: 110 đường số 10, phường 10, Gò Vấp, TP.HCM <br />
+          </p>
+        </div>
+      </div>
+
+      <div class="things__item">
+        <img src="./img-PhamDongAnh/HocVan.jpg" alt="Trình độ học vấn" />
+        <div class="things__item--heading">
+          <h3>Trình Độ Học Vấn</h3>
+          <p>
+            Trường Đại Học Giao Thông Vận Tải Hồ Chí Minh <br />
+            Sinh viên năm 2 – Khoa Mạng máy tính và Truyền thông dữ liệu
+          </p>
+        </div>
+      </div>
+
+      <div class="things__item">
+        <img src="./img-PhamDongAnh/SoThich.jpg" alt="Sở thích cá nhân" />
+        <div class="things__item--heading">
+          <h3>Sở Thích</h3>
+          <ul>
+            <li>Chơi game</li>
+            <li>Xem phim</li>
+            <li>Ngủ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills -->
+  <section id="skills">
+    <div class="container">
+      <h2>Kỹ năng</h2>
+      <div class="skill-icons">
+        <div class="skill-icon">
+          <img src="./img-PhamDongAnh/C++.jpg" alt="C++" />
+          <p>C++</p>
+        </div>
+        <div class="skill-icon">
+          <img src="./img-PhamDongAnh/Java.jpg" alt="Java" />
+          <p>Java</p>
+        </div>
+        <div class="skill-icon">
+          <img src="./img-PhamDongAnh/HTML.jpg" alt="HTML/CSS" />
+          <p>HTML / CSS</p>
+        </div>
+      </div>
+      <div class="skill-info">
+        <p>Ngôn ngữ: Tiếng Anh</p>
+        <p>Giải thưởng: Chưa có</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- plans -->
+  <!-- Dự định (Plans) - Hình ảnh các mục tiêu -->
+  <section id="plans">
+    <div class="container">
+      <div class="plans__dec">
+        <img src="./img-PhamDongAnh/BongBong4.png" />
+      </div>
+      <div class="plans__dec">
+        <img src="./img-PhamDongAnh/BongBong3.png" />
+      </div>
+      <h2>Dự định sắp tới</h2>
+      <div class="plans__img">
+        <div class="plans__img--single">
+          <img src="./img-PhamDongAnh/CongDong.jpg" />
+        </div>
+        <div class="plans__img--single">
+          <img src="./img-PhamDongAnh/TimViec.jpg" />
+        </div>
+        <div class="plans__img--single">
+          <img src="./img-PhamDongAnh/DuLich.jpg" />
+        </div>
+        <div class="plans__img--single">
+          <img src="./img-PhamDongAnh/SucKhoe.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <!-- Footer - Thông tin liên hệ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer__heading">
+        <h1>Liên hệ</h1>
+        <!-- Phần liên hệ trong footer -->
+        <div class="footer__contact">
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>(+84) 916 763 530</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.facebook.com/phamdonganh05">Đa Đa</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>110 đường số 10, phường 10, Gò Vấp, TP.HCM</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>anhpd7361@ut.edu.vn</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-laptop"></i>
+            <a href="https://github.com/PhamDongAnh7361/QuanLyNhanVien">Github: PhamDongAnh</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nút trở về đầu trang -->
+    <button id="backToTop" title="Lên đầu trang">⬆</button>
+  </footer>
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/28c0af3030.js" crossorigin="anonymous"></script>
+  <!-- main js -->
+  <script src="main.js"></script>
+</body>
+
+</html>

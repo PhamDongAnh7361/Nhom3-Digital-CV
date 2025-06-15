@@ -1,0 +1,138 @@
+/* Thiết lập mặc định cho toàn trang */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hình ảnh không vượt quá khung chứa */
+img {
+  max-width: 100%;
+}
+
+/* Thiết lập cho thẻ body */
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0f0f0f;
+  background-color: #ecedef;
+  padding: 50px;
+}
+
+/* Tiêu đề chính */
+h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* Khối chứa tất cả thành viên */
+.users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  gap: 30px;
+}
+
+/* Hộp thông tin từng thành viên */
+.user {
+  position: relative;
+  z-index: 1;
+  width: 250px;
+  aspect-ratio: 1 / 1.4; /* Chiều cao = chiều rộng x 1.4 */
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 30px 30px 5px #d6d9e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Khung ngoài ảnh đại diện */
+.user-img-wrap {
+  position: relative;
+  width: 117px;
+  aspect-ratio: 1;
+  padding: 7px;
+  border-radius: 100%;
+}
+
+/* Viền chuyển động khi hover ảnh */
+.user-img-wrap::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  inset: 0;
+  border-radius: 100%;
+  background: linear-gradient(
+    #8ae4f4,
+    #8aa8f4,
+    #007aff,
+    #7d88e8,
+    #5856d6,
+    #bb7aec
+  );
+  opacity: 0;
+  transition: opacity 1s;
+  animation: rotate 4s linear infinite;
+  animation-play-state: paused;
+  filter: saturate(2) blur(10px);
+}
+
+/* Khi hover sẽ hiện hiệu ứng xoay */
+.user:hover .user-img-wrap::after {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+/* Tạo animation xoay tròn */
+@keyframes rotate {
+  to {
+    rotate: 360deg;
+  }
+}
+
+/* Ảnh đại diện tròn */
+.user-img {
+  aspect-ratio: 1;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+/* Thông tin tên và vị trí người dùng */
+.user-meta {
+  text-align: center;
+}
+
+/* Tên người dùng */
+.user-name {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* Vị trí địa lý */
+.user-location {
+  font-size: 0.875rem;
+  color: #a0a2b6;
+  margin-bottom: 1rem;
+}
+
+/* Nút "Tìm hiểu" */
+.user button {
+  width: 100px;
+  height: 30px;
+  border: 2px solid #080103;
+  background: transparent;
+  color: #000000;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/* Hover nút "Tìm hiểu" */
+.user button:hover {
+  background: #d8e0e8;
+}
