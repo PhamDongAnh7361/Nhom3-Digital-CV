@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: #eee;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 850px;
+    margin: 40px auto;
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .profile-section {
+    margin-bottom: 30px;
+  }
+  
+  .avatar-wrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #2ebf91;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  }
+  
+  #avatar-upload {
+    display: none;
+  }
+  
+  .title {
+    margin: 10px 0;
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  .btn-download {
+    margin-top: 15px;
+    background: #2ebf91;
+    border: none;
+    color: #111;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-download:hover {
+    background: #25a27a;
+  }
+  
+  /* Mạng xã hội */
+  .social-links {
+    margin: 15px 0;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: #eee;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #2ebf91;
+  }
+  
+  .info section {
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+  
+  .info h3 {
+    color: #2ebf91;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+  
+  /* Hiệu ứng xuất hiện */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  
+  .fade-section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
